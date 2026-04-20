@@ -1,0 +1,11 @@
+#EX 8:PYTHON PROGRAMS USING MODULES AND PACKAGES
+#...........I.................................................................
+#Python  program to find area of the circle using math module
+import math
+def circle(r):
+    return (math.pi*(math.pow(r,2)))
+
+#main
+r=int(input("entr the radius of circle:"))
+area=circle(r)
+print("Area of the circle:",area)
