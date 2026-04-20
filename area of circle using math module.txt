@@ -1,0 +1,22 @@
+#Python  program to find area of the circle using math module
+import math
+def circle(r):
+    return (math.pi*(math.pow(r,2)))
+
+#main
+r=int(input("entr the radius of circle:"))
+area=circle(r)
+print("Area of the circle:",area)
+
+[24bec015@mepcolinux ex9]$cat pro2.py
+#calculate cos(2pi)+sin(pi) using modules
+import math
+def trig(c,s):
+   total=s+c
+   return total
+
+#main
+c=math.cos(2*math.pi)
+s=math.sin(math.pi)
+total=trig(c,s)
+print(total)
