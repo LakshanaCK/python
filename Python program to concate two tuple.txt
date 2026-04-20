@@ -1,0 +1,8 @@
+Python program to concate two tuple & print the resulting tuple
+
+def concat(tup1,tup2):
+        concat=tup1+tup2
+        print(concat)
+tup_a=(1,2,3)
+tup_b=('a','b','c')
+concat(tup_a,tup_b)

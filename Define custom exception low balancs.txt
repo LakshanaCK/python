@@ -1,0 +1,19 @@
+Define custom exception low balancs error and raises it withdrawal amount exceeds the balance
+def LowBalanceError(message):
+    return message
+
+# Function to handle withdrawal
+def withdraw(balance, amount):
+    if amount > balance:
+        raise Exception(LowBalanceError("Withdrawal amount exceeds balance!"))
+    balance -= amount
+    return balance
+
+# main routine
+try:
+    current_balance =int(input("enter the current balance"))  #  balance
+    withdrawal_amount =int(input("enter the withdrawal amount")) # withdrawal amount
+    current_balance = withdraw(current_balance, withdrawal_amount)
+    print(f"Transaction successful! Remaining balance: {current_balance}")
+except Exception as e:
+    print("Error:", e)

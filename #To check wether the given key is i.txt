@@ -1,0 +1,19 @@
+#To check wether the given key is in the dictionary or not
+def is_key_in_dictionary(dictionary, key):
+    return key in dictionary
+my_dict = {
+    'name': 'Alice',
+    'age': 30,
+    'city': 'New York'
+}
+key_to_check = 'age'
+if is_key_in_dictionary(my_dict, key_to_check):
+    print(f"The key '{key_to_check}' is in the dictionary.")
+else:
+    print(f"The key '{key_to_check}' is not in the dictionary.")
+key_to_check = 'country'
+if is_key_in_dictionary(my_dict, key_to_check):
+    print(f"The key '{key_to_check}' is in the dictionary.")
+else:
+    print(f"The key '{key_to_check}' is not in the dictionary.")
+

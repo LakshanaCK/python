@@ -1,0 +1,8 @@
+#python program to find maximum and minimum value  from numeric tuple
+def max_min(tup):
+   return max(tup),min(tup)
+
+
+# main
+tup=(2,6,1,7,3,8,12,5,0)
+print("The maximum & minimum value from tuple :",max_min(tup))

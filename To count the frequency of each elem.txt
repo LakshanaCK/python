@@ -1,0 +1,16 @@
+ To count the frequency of each element in a tuple and store reult
+def count_frequency(tup):
+    frequency_dict = {}
+
+    for item in tup:
+        if item in frequency_dict:
+            frequency_dict[item] += 1
+        else:
+            frequency_dict[item] = 1
+
+    return frequency_dict
+
+# Example usage
+my_tuple = (1, 2, 2, 3, 4, 4, 4, 5)
+frequency = count_frequency(my_tuple)
+print(frequency)
