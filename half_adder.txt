@@ -1,0 +1,14 @@
+def half_adder(bit_a, bit_b):
+    """
+    Calculates the sum and carry of two bits.
+
+    Args:
+        bit_a: The first bit.
+        bit_b: The second bit.
+
+    Returns:
+        A tuple containing the sum and carry.
+    """
+    sum_result = bit_a ^ bit_b  # XOR operation for sum
+    carry = bit_a & bit_b      # AND operation for carry
+    return sum_result, carry
