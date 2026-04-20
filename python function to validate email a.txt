@@ -1,0 +1,21 @@
+python function to validate email address and raise a value error if the email format is invalid
+def validate_email(email):
+    if "@" not in email or email.startswith("@") or email.endswith("@"):
+        raise ValueError("Invalid email format: '@' is missing or missing it throw error")
+    local, domain = email.split("@", 1)
+
+    if "." not in domain or domain.startswith(".") or domain.endswith("."):
+        raise ValueError("Invalid email format: Domain must contain a '.' and it must not be at the start or end.")
+    if not local or not domain:
+        raise ValueError("Invalid email format: Local or domain part is empty.")
+    if " " in email:
+        raise ValueError("Invalid email format: Email address contains spaces.")
+    return True
+
+#main routine
+try:
+    email = "example@domain.com"
+    if validate_email(email):
+        print(f"'{email}' is a valid email address.")
+except ValueError as e:
+    print(e)
