@@ -1,0 +1,14 @@
+.python program to raise a run time error
+import math
+def calculate_circle_area(r):
+   if r<0:
+      raise RuntimeError("Radius cannot be negative")
+   return math.pi*r**2
+try:
+   r=float(input("enter the radius of circle:"))
+   area=calculate_circle_area(r)
+   print("the area of circle is:",area)
+except RuntimeError as e:
+   print("Error:",e)
+except ValueError:
+   print("invalid input.Please enter a  numeric value for radius.")
