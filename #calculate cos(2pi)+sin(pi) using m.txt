@@ -1,0 +1,27 @@
+#calculate cos(2pi)+sin(pi) using modules
+import math
+def trig(c,s):
+   total=s+c
+   return total
+
+#main
+c=math.cos(2*math.pi)
+s=math.sin(math.pi)
+total=trig(c,s)
+print(total)
+
+[24bec015@mepcolinux ex9]$cat pro3.py
+cat: pro3.py: No such file or directory
+[24bec015@mepcolinux ex9]$cat proo3.py
+
+import numpy as np
+array=np.array([3,7,9,5,3])
+print(array)
+sums=np.sum(array)
+avg=np.mean(array)
+maxi=np.max(array)
+mini=np.min(array)
+print("Sum is:",sums)
+print("avg:",avg)
+print("max:",maxi)
+print("Min:",mini)
