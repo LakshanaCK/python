@@ -1,0 +1,13 @@
+ Python program  exception handling to ensure the user enters a numeric value. If the input is valid, it displays the numeric value; otherwise, it shows an error message.
+
+def get_numeric_input():
+    try:
+        # Prompt the user to enter a numeric value
+        value = float(input("Enter a numeric value: "))
+        print(f"Success! You entered the numeric value: {value}")
+    except ValueError:
+        # Handle the case where the input is not a numeric value
+        print("Error: Invalid input. Please enter a valid numeric value.")
+
+# Call the function
+get_numeric_input()
