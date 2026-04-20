@@ -1,0 +1,13 @@
+python functio to object a variable and print the variable
+def test_function(b):
+   try:
+      print("the input function should be a integer:",a)
+      raise
+      print("it will raise an error object variable is")
+   except:
+      print(b)
+
+#main routine
+a=str(input("enter a value:"))
+b=str(input("enter b value:"))
+test_function(b)
