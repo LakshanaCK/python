@@ -1,0 +1,14 @@
+python to raise zero error if the number is divide ny zero
+def safe_division(numerator, denominator):
+    try:
+        result = numerator / denominator
+        return result
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+        return None
+#main routine
+# Valid division
+print(safe_division(10, 2))
+
+# Division by zero
+print(safe_division(10, 0))
