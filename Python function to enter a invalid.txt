@@ -1,0 +1,10 @@
+Python function to enter a invalid age exception if the age of the person is negative
+def set_age(age):
+   if age<0:
+      raise ValueError("age cannot be negetive")
+   return age
+#example usage
+try:
+   age=set_age(-3)
+except ValueError as e:
+   print(e)
